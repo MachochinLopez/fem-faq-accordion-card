@@ -211,6 +211,9 @@ body {
   padding-right: 1rem;
   width: 100%;
 }
+.accordion__item:hover {
+  cursor: pointer;
+}
 .accordion__item-title {
   align-items: center;
   display: flex;
@@ -220,9 +223,6 @@ body {
   width: inherit;
   background-color: transparent;
   border: none;
-}
-.accordion__item-title:hover {
-  cursor: pointer;
 }
 .accordion__item-title:focus {
   outline-color: #f47c57;

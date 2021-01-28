@@ -6,6 +6,10 @@
     border-bottom: 1px solid $divider-color;
     padding-right: 1rem;
     width: 100%;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__item-title {
@@ -19,10 +23,6 @@
 
     background-color: transparent;
     border: none;
-
-    &:hover {
-      cursor: pointer;
-    }
 
     &:focus {
       outline-color: $arrow-color;
