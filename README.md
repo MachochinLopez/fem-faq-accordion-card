@@ -2,6 +2,8 @@
 
 ![Design preview for the FAQ Accordion Card coding challenge](./design/desktop-preview.jpg)
 
+Live demo at: https://fem-faq-accordion-card-tau.vercel.app/
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
