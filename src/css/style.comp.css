@@ -230,7 +230,7 @@ body {
 .accordion__item-title::-webkit-details-marker {
   display: none;
 }
-@media only screen and (max-width: 37.5em) {
+@media only screen and (hover: none) {
   .accordion__item-title:focus {
     outline: none;
   }
@@ -242,12 +242,14 @@ body {
   max-height: 0;
   padding: 0 0.5rem;
   opacity: 0;
+  visibility: hidden;
   transition: max-height 0.5s ease, padding 0.7s, opacity 0.5s ease;
 }
 .accordion__item--open .accordion__item-content {
   max-height: 20rem;
   padding: 1rem 0.5rem;
   opacity: 1;
+  visibility: visible;
 }
 
 .faq-component-page {

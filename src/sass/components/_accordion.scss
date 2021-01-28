@@ -51,6 +51,7 @@
     max-height: 0;
     padding: 0 0.5rem;
     opacity: 0;
+    visibility: hidden;
     transition: max-height 0.5s ease, padding 0.7s, opacity 0.5s ease;
   }
 
@@ -58,5 +59,6 @@
     max-height: 20rem;
     padding: 1rem 0.5rem;
     opacity: 1;
+    visibility: visible;
   }
 }
