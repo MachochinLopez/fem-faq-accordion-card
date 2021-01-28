@@ -1,0 +1,16 @@
+.faq-component-page {
+  background-image: linear-gradient(to bottom, $gradient-light, $gradient-dark);
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  overflow-y: scroll;
+
+  @include respond(tablet) {
+    padding: 2.5rem;
+    padding-top: 15rem;
+    align-items: flex-start;
+  }
+}

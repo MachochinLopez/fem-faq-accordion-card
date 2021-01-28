@@ -1,0 +1,62 @@
+.accordion {
+  padding: 1rem 0.5rem;
+
+  &__item {
+    padding: 1rem 0;
+    border-bottom: 1px solid $divider-color;
+    padding-right: 1rem;
+    width: 100%;
+  }
+
+  &__item-title {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+
+    padding: 1rem 0.5rem;
+    width: inherit;
+
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:focus {
+      outline-color: $arrow-color;
+    }
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    @include respond(phone) {
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &__item-arrow {
+    padding-left: 1rem;
+  }
+
+  /*********************************
+   * OPENING AND CLOSING ANIMATION *
+   *********************************/
+
+  &__item-content {
+    max-height: 0;
+    padding: 0 0.5rem;
+    opacity: 0;
+    transition: max-height 0.5s ease, padding 0.7s, opacity 0.5s ease;
+  }
+
+  &__item--open &__item-content {
+    max-height: 20rem;
+    padding: 1rem 0.5rem;
+    opacity: 1;
+  }
+}
