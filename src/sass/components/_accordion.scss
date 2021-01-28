@@ -28,8 +28,8 @@
       outline-color: $arrow-color;
     }
 
-    &::-webkit-details-marker {
-      display: none;
+    &:hover {
+      cursor: pointer;
     }
 
     @media only screen and (hover: none) {

@@ -28,16 +28,20 @@ body {
 }
 
 .accordion {
+  &__item:hover .accordion__item-title {
+    color: $arrow-color;
+  }
+
   &__item--open > &__item-title {
     font-weight: 700;
   }
 
+  &__item--open:hover > &__item-title {
+    color: $text-primary;
+  }
+
   &__item-title {
     font-size: 1.4rem;
-
-    &:hover {
-      color: $arrow-color;
-    }
 
     @include respond(tablet) {
       font-size: 1.4rem;

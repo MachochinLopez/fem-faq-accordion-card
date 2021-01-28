@@ -24,14 +24,17 @@ body {
   font-size: 3.5rem;
 }
 
+.accordion__item:hover .accordion__item-title {
+  color: #f47c57;
+}
 .accordion__item--open > .accordion__item-title {
   font-weight: 700;
 }
+.accordion__item--open:hover > .accordion__item-title {
+  color: #1d1e35;
+}
 .accordion__item-title {
   font-size: 1.4rem;
-}
-.accordion__item-title:hover {
-  color: #f47c57;
 }
 @media only screen and (max-width: 57.5em) {
   .accordion__item-title {
@@ -227,8 +230,8 @@ body {
 .accordion__item-title:focus {
   outline-color: #f47c57;
 }
-.accordion__item-title::-webkit-details-marker {
-  display: none;
+.accordion__item-title:hover {
+  cursor: pointer;
 }
 @media only screen and (hover: none) {
   .accordion__item-title:focus {
