@@ -32,7 +32,7 @@
       display: none;
     }
 
-    @include respond(phone) {
+    @media only screen and (hover: none) {
       &:focus {
         outline: none;
       }
